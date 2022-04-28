@@ -1,0 +1,35 @@
+6.3894 	WARNING 	User requested fullscreen with size [1680 1050], but screen is actually [1920, 1080]. Using actual size
+7.7316 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8004ad80d0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f8004353400>, multiSample=False, name='window1', numSamples=2, pos=[480.0, 270.0], screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.7320 	EXP 	window1: mouseVisible = True
+7.7320 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.7321 	EXP 	window1: recordFrameIntervals = False
+7.8976 	EXP 	window1: recordFrameIntervals = True
+8.2489 	EXP 	Screen (0) actual frame rate measured at 59.25Hz
+8.2490 	EXP 	window1: recordFrameIntervals = False
+10.3010 	EXP 	Created consent_form_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='consent_form_text', opacity=1, ori=0.0, pos=array([0.  , 0.05]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.3241 	EXP 	Created valence_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='valence_instructions_text', opacity=1, ori=0.0, pos=array([0.  , 0.05]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.3467 	EXP 	Created Valence_Fixation_Message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Valence_Fixation_Message', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.4950 	EXP 	Sound track set volume 1.000
+10.5048 	EXP 	Created Arousal_Fixation_Message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Arousal_Fixation_Message', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.5196 	EXP 	Sound track set volume 1.000
+10.5486 	EXP 	Created debrief = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='debrief', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.5518 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Thank you for your time. \n\n', units='height', win=Window(...), wrapWidth=1)
+10.5692 	EXP 	consent_form_text: autoDraw = True
+11.2062 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+11.2066 	EXP 	New trial (rep=0, index=0): None
+11.2122 	DATA 	Keypress: y
+11.2216 	EXP 	consent_form_text: autoDraw = False
+11.2216 	EXP 	valence_instructions_text: autoDraw = True
+12.6996 	EXP 	Imported fixed_sample.xlsx as conditions, 5 conditions, 16 params
+12.7001 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+12.7005 	EXP 	New trial (rep=0, index=0): {'Unnamed': 273, 'FileName': 'GeorgeHarrison_CrackerboxPalace_1977', 'ARTIST': 'George Harrison', 'TITLE': 'Crackerbox Palace', 'ChartDate': '2/5/77', 'PeakPosition': 19, 'WeeksOnChart': 11, 'TargetRank': 49, 'ActualRank': 49, 'SampleID': 1282, 'YoutubeLink': 'https://www.youtube.com/watch?v=8Ac34Khe-fc', 'OriginalAudio': True, 'Year': 1977, 'SongGroup': 1, 'HumName': 'GeorgeHarrison_CrackerboxPalace_1977.hum', 'WavFileName': 'wavs/GeorgeHarrison_CrackerboxPalace_1977.wav'}
+12.7065 	DATA 	Keypress: y
+12.7165 	EXP 	valence_instructions_text: autoDraw = False
+12.7165 	EXP 	Valence_Fixation_Message: autoDraw = True
+15.7587 	EXP 	Sound track started
+15.7550 	DATA 	Keypress: y
+15.7664 	EXP 	Valence_Fixation_Message: autoDraw = False
+185.3089 	DATA 	Mouse: Left button down, pos=(1693,440)
+185.3752 	DATA 	Mouse:  Left button up, pos=(1693,440)
+185.4596 	DATA 	Keypress: escape
+186.3409 	EXP 	window1: mouseVisible = True

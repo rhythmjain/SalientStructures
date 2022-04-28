@@ -1,0 +1,60 @@
+9.4028 	WARNING 	User requested fullscreen with size [1680 1050], but screen is actually [1920, 1080]. Using actual size
+10.6560 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fc1a8cf5190>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fc1aa9224c0>, multiSample=False, name='window1', numSamples=2, pos=[480.0, 270.0], screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.6564 	EXP 	window1: mouseVisible = True
+10.6565 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+10.6565 	EXP 	window1: recordFrameIntervals = False
+10.8195 	EXP 	window1: recordFrameIntervals = True
+11.0008 	EXP 	Screen (0) actual frame rate measured at 60.87Hz
+11.0008 	EXP 	window1: recordFrameIntervals = False
+13.6721 	EXP 	Created consent_form_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='consent_form_text', opacity=1, ori=0.0, pos=array([0.  , 0.05]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+13.6958 	EXP 	Created instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='instructions_text', opacity=1, ori=0.0, pos=array([0.  , 0.05]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+13.7125 	EXP 	Imported csv_participant_information.xlsx as conditions, 4 conditions, 13 params
+13.7134 	EXP 	Question text: Some information about you.
+13.7712 	EXP 	Question text: What is your age?
+13.8096 	EXP 	window1: mouseVisible = True
+13.8600 	EXP 	Question text: Gender?
+13.8688 	EXP 	window1: mouseVisible = True
+13.9113 	EXP 	Question text: What musical styles/genres they you highly familiar with? Please enter in the space provided.
+13.9273 	EXP 	window1: mouseVisible = True
+13.9571 	EXP 	Created information_form = <psychopy.visual.form.Form object at 0x7fc1a9481f40>
+13.9644 	EXP 	window1: mouseVisible = True
+13.9813 	EXP 	Created fixation_message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation_message', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='Get ready for the clip! ', units='height', win=Window(...), wrapWidth=1)
+13.9874 	EXP 	window1: mouseVisible = True
+14.1572 	EXP 	Sound track set volume 1.000
+14.1629 	EXP 	Created fixation_message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation_message', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='Get ready for the clip! ', units='height', win=Window(...), wrapWidth=1)
+14.1682 	EXP 	window1: mouseVisible = True
+14.1828 	EXP 	Sound track set volume 1.000
+14.2124 	EXP 	Created debrief = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='debrief', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.2156 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Thank you for your time. \n\n', units='height', win=Window(...), wrapWidth=1)
+14.2329 	EXP 	unnamed Form: autoLog = True
+14.2329 	EXP 	information_form: name = 'information_form'
+14.2329 	EXP 	information_form: depth = 0
+14.2329 	EXP 	consent_form_text: autoDraw = True
+15.9166 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+15.9170 	EXP 	New trial (rep=0, index=0): None
+15.9230 	DATA 	Keypress: y
+15.9325 	EXP 	consent_form_text: autoDraw = False
+15.9325 	EXP 	instructions_text: autoDraw = True
+16.8889 	DATA 	Keypress: y
+17.0658 	EXP 	instructions_text: autoDraw = False
+17.0658 	EXP 	information_form: autoDraw = True
+18.1571 	DATA 	Mouse: Left button down, pos=(852,690)
+18.2993 	DATA 	Mouse:  Left button up, pos=(847,690)
+18.3724 	DATA 	Mouse: Left button down, pos=(848,689)
+18.4656 	DATA 	Mouse:  Left button up, pos=(849,689)
+18.9623 	DATA 	Keypress: s
+19.0913 	DATA 	Keypress: d
+19.8917 	DATA 	Keypress: return
+20.0825 	DATA 	Keypress: return
+20.2220 	DATA 	Keypress: return
+20.4273 	DATA 	Keypress: return
+21.1633 	DATA 	Keypress: backspace
+21.3289 	DATA 	Keypress: backspace
+21.4806 	DATA 	Keypress: backspace
+21.6836 	DATA 	Keypress: backspace
+23.4001 	DATA 	Mouse: Left button down, pos=(591,398)
+23.4693 	DATA 	Mouse:  Left button up, pos=(591,398)
+23.5198 	DATA 	Mouse: Left button down, pos=(591,398)
+23.6051 	DATA 	Mouse:  Left button up, pos=(591,398)
+23.8234 	DATA 	Keypress: escape
+24.9520 	EXP 	window1: mouseVisible = True

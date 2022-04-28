@@ -1,0 +1,39 @@
+11.7978 	WARNING 	User requested fullscreen with size [1680 1050], but screen is actually [1920, 1080]. Using actual size
+12.9102 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8bcfa07070>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f8bcedc72b0>, multiSample=False, name='window1', numSamples=2, pos=[480.0, 270.0], screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.9110 	EXP 	window1: mouseVisible = True
+12.9111 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+12.9111 	EXP 	window1: recordFrameIntervals = False
+13.0739 	EXP 	window1: recordFrameIntervals = True
+13.2120 	WARNING 	t of last frame was 20.76ms (=1/48)
+13.3927 	EXP 	Screen (0) actual frame rate measured at 60.06Hz
+13.3928 	EXP 	window1: recordFrameIntervals = False
+16.3493 	EXP 	Created consent_form_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='consent_form_text', opacity=1, ori=0.0, pos=array([0.  , 0.05]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.3728 	EXP 	Created instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='instructions_text', opacity=1, ori=0.0, pos=array([0.  , 0.05]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.3843 	EXP 	Created fixation_message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation_message', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='Get ready for the clip! ', units='height', win=Window(...), wrapWidth=1)
+16.4050 	EXP 	window1: mouseVisible = True
+16.5579 	EXP 	Sound track set volume 1.000
+16.5614 	EXP 	Created fixation_message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixation_message', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='Get ready for the clip! ', units='height', win=Window(...), wrapWidth=1)
+16.5658 	EXP 	window1: mouseVisible = True
+16.5819 	EXP 	Sound track set volume 1.000
+16.6107 	EXP 	Created debrief = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='debrief', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.6143 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Thank you for your time. \n\n', units='height', win=Window(...), wrapWidth=1)
+16.6329 	EXP 	consent_form_text: autoDraw = True
+17.0484 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+17.0486 	EXP 	New trial (rep=0, index=0): None
+17.0549 	DATA 	Keypress: y
+17.0641 	EXP 	consent_form_text: autoDraw = False
+17.0641 	EXP 	instructions_text: autoDraw = True
+17.7282 	DATA 	Keypress: y
+17.7402 	EXP 	instructions_text: autoDraw = False
+19.8737 	DATA 	Keypress: j
+22.3731 	DATA 	Keypress: f
+22.5899 	DATA 	Keypress: g
+23.4564 	DATA 	Keypress: f
+23.5740 	DATA 	Keypress: c
+23.6896 	DATA 	Keypress: g
+23.7066 	DATA 	Keypress: f
+23.7901 	DATA 	Keypress: c
+23.9897 	DATA 	Keypress: p
+24.2397 	DATA 	Keypress: apostrophe
+24.2742 	DATA 	Keypress: p
+25.2488 	EXP 	window1: mouseVisible = True
