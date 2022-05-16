@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.1.2),
-    on Sun May 15 15:06:12 2022
+    on Mon May 16 09:47:30 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -101,6 +101,42 @@ consent_form_text = visual.TextStim(win=win, name='consent_form_text',
     languageStyle='LTR',
     depth=0.0);
 consent_resp = keyboard.Keyboard()
+
+# Initialize components for Routine "get_songs"
+get_songsClock = core.Clock()
+with open("number.txt", "r") as f:
+    old_num = f.readlines()
+    f.close()
+
+pg = int(old_num[0])
+new_num = pg + 1
+
+with open("number.txt", "w") as f:
+    f.write(str(new_num))
+    f.close()
+
+pg = int(old_num[0])
+
+def getVG(num):
+    return (2*(num//10) + (num % 2))
+
+def getAG(num):
+    return num+1 if num%2==0 else num-1
+
+vg = getVG(pg)
+ag = getAG(vg)
+
+def get_row_start(gnum):
+    return gnum*5
+def get_row_end(gnum, length):
+    return gnum*5+length
+    
+vg_start = get_row_start(vg)
+vg_end = get_row_end(vg, 5)
+vg_slice = slice(vg_start, vg_end)
+ag_start = get_row_start(ag)
+ag_end = get_row_end(ag, 5)
+ag_slice = slice(ag_start, ag_end)
 
 # Initialize components for Routine "Valence_Instructions"
 Valence_InstructionsClock = core.Clock()
@@ -338,6 +374,57 @@ for thisConsent_ye in consent_yes:
         for paramName in thisConsent_ye:
             exec('{} = thisConsent_ye[paramName]'.format(paramName))
     
+    # ------Prepare to start Routine "get_songs"-------
+    continueRoutine = True
+    # update component parameters for each repeat
+    # keep track of which components have finished
+    get_songsComponents = []
+    for thisComponent in get_songsComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    get_songsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "get_songs"-------
+    while continueRoutine:
+        # get current time
+        t = get_songsClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=get_songsClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in get_songsComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "get_songs"-------
+    for thisComponent in get_songsComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # the Routine "get_songs" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # set up handler to look after randomisation of conditions etc
     is_valence_first = data.TrialHandler(nReps=valence_first, method='random', 
         extraInfo=expInfo, originPath=-1,
@@ -449,24 +536,6 @@ for thisConsent_ye in consent_yes:
             is_valence_first.addData('valence_instructions_resp.rt', valence_instructions_resp.rt)
         is_valence_first.addData('valence_instructions_resp.started', valence_instructions_resp.tStartRefresh)
         is_valence_first.addData('valence_instructions_resp.stopped', valence_instructions_resp.tStopRefresh)
-        pg = int(expInfo['participant'])
-        def getAG(num):
-            return num+1 if num%2==0 else num-1
-        
-        vg = pg
-        ag = getAG(pg)
-        
-        def get_row_start(gnum):
-            return gnum*5
-        def get_row_end(gnum, length):
-            return gnum*5+length
-            
-        vg_start = get_row_start(vg)
-        vg_end = get_row_end(vg, 5)
-        vg_slice = slice(vg_start, vg_end)
-        ag_start = get_row_start(ag)
-        ag_end = get_row_end(ag, 5)
-        ag_slice = slice(ag_start, ag_end)
         # the Routine "Valence_Instructions" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -1042,24 +1111,6 @@ for thisConsent_ye in consent_yes:
             is_valence_second.addData('valence_instructions_resp.rt', valence_instructions_resp.rt)
         is_valence_second.addData('valence_instructions_resp.started', valence_instructions_resp.tStartRefresh)
         is_valence_second.addData('valence_instructions_resp.stopped', valence_instructions_resp.tStopRefresh)
-        pg = int(expInfo['participant'])
-        def getAG(num):
-            return num+1 if num%2==0 else num-1
-        
-        vg = pg
-        ag = getAG(pg)
-        
-        def get_row_start(gnum):
-            return gnum*5
-        def get_row_end(gnum, length):
-            return gnum*5+length
-            
-        vg_start = get_row_start(vg)
-        vg_end = get_row_end(vg, 5)
-        vg_slice = slice(vg_start, vg_end)
-        ag_start = get_row_start(ag)
-        ag_end = get_row_end(ag, 5)
-        ag_slice = slice(ag_start, ag_end)
         # the Routine "Valence_Instructions" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         

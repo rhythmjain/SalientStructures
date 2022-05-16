@@ -511,23 +511,6 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
-      <CodeComponent name="code_2">
-        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="pg = Number.parseInt(expInfo[&quot;participant&quot;]);&amp;#10;function getAG(num) {&amp;#10;    return (((num % 2) === 0) ? (num + 1) : (num - 1));&amp;#10;}&amp;#10;vg = pg;&amp;#10;ag = getAG(pg);&amp;#10;function get_row_start(gnum) {&amp;#10;    return (gnum * 5);&amp;#10;}&amp;#10;function get_row_end(gnum, length) {&amp;#10;    return ((gnum * 5) + length);&amp;#10;}&amp;#10;vg_start = get_row_start(vg);&amp;#10;vg_end = get_row_end(vg, 5);&amp;#10;vg_slice = slice(vg_start, vg_end);&amp;#10;ag_start = get_row_start(ag);&amp;#10;ag_end = get_row_end(ag, 5);&amp;#10;ag_slice = slice(ag_start, ag_end);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="pg = int(expInfo['participant'])&amp;#10;def getAG(num):&amp;#10;    return num+1 if num%2==0 else num-1&amp;#10;&amp;#10;vg = pg&amp;#10;ag = getAG(pg)&amp;#10;&amp;#10;def get_row_start(gnum):&amp;#10;    return gnum*5&amp;#10;def get_row_end(gnum, length):&amp;#10;    return gnum*5+length&amp;#10;    &amp;#10;vg_start = get_row_start(vg)&amp;#10;vg_end = get_row_end(vg, 5)&amp;#10;vg_slice = slice(vg_start, vg_end)&amp;#10;ag_start = get_row_start(ag)&amp;#10;ag_end = get_row_end(ag, 5)&amp;#10;ag_slice = slice(ag_start, ag_end)" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="code_2" valType="code" updates="None" name="name"/>
-      </CodeComponent>
     </Routine>
     <Routine name="Annotation_Instructions">
       <TextComponent name="annotations_instructions_text">
@@ -574,6 +557,25 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
     </Routine>
+    <Routine name="get_songs">
+      <CodeComponent name="song_code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="with open(&quot;number.txt&quot;, &quot;r&quot;) as f:&amp;#10;    old_num = f.readlines()&amp;#10;    f.close()&amp;#10;&amp;#10;pg = int(old_num[0])&amp;#10;new_num = pg + 1&amp;#10;&amp;#10;with open(&quot;number.txt&quot;, &quot;w&quot;) as f:&amp;#10;    f.write(str(new_num))&amp;#10;    f.close()&amp;#10;&amp;#10;pg = int(old_num[0])&amp;#10;&amp;#10;def getVG(num):&amp;#10;    return (2*(num//10) + (num % 2))&amp;#10;&amp;#10;def getAG(num):&amp;#10;    return num+1 if num%2==0 else num-1&amp;#10;&amp;#10;vg = getVG(pg)&amp;#10;ag = getAG(vg)&amp;#10;&amp;#10;def get_row_start(gnum):&amp;#10;    return gnum*5&amp;#10;def get_row_end(gnum, length):&amp;#10;    return gnum*5+length&amp;#10;    &amp;#10;vg_start = get_row_start(vg)&amp;#10;vg_end = get_row_end(vg, 5)&amp;#10;vg_slice = slice(vg_start, vg_end)&amp;#10;ag_start = get_row_start(ag)&amp;#10;ag_end = get_row_end(ag, 5)&amp;#10;ag_slice = slice(ag_start, ag_end)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="song_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="Consent_Form"/>
@@ -588,6 +590,7 @@
       <Param name="name" updates="None" val="consent_yes" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="get_songs"/>
     <LoopInitiator loopType="TrialHandler" name="is_valence_first">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
